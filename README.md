@@ -8,4 +8,4 @@
 - JPA
 
 ## ERD
-![ERD](.assets/ERD.png)
+![ERD](.assets/ERD.PNG)
