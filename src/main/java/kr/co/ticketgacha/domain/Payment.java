@@ -3,6 +3,7 @@ package kr.co.ticketgacha.domain;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
 import java.time.LocalDateTime;
@@ -12,8 +13,10 @@ public class Payment {
     @Id
     private Long paymentId;
     @ManyToOne
+    @JoinColumn(name = "RESERVATION_ID")
     private Reservation reservation;
     @ManyToOne
+    @JoinColumn(name = "MEMBER_ID")
     private Member member;
     @Column
     private LocalDateTime paymentDate;
