@@ -14,7 +14,7 @@ public class CreateMemberRequest {
     @NotNull
     private String name;
     @NotNull
-    @Email
+    @Email(message = "올바른 Email 형식이 아닙니다.")
     private String email;
     @NotNull
     private String phone;
